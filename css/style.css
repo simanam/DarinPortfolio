@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* 
+---01 Typography Poppins
+Bebas Neue
+Poppins
+- Font Sizes (Px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font Weights:
+Defualt : 1
+
+
+-Line heights 
+Default: 1
+
+
+-spacing system (Px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 /  80 / 96 / 128 
+
+
+--- 02 COLORS
+priamry: #F2C94C yellow
+secondary: #183953  dark blue
+
+
+-black
+text : #333333
+
+-Greys:
+grey for button = #F4F3F8
+grey for dots: #7F8F9C
+
+-- Shadows
+
+
+--border radius 
+
+
+--whitespace 
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = .625 = 62.5% */
+  /* percentage of user's broweser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ********************************* */
+
+/* ********************************* */
+
+/* ********************************* */
+
+.main-nav {
+  margin-right: 45.5rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 300;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  text-decoration: underline;
+}
+
+/*Header Section */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 9.6rem;
+}
+
+/* .logo {
+  height: 2.4rem;
+} */
+
+/* ********************************* */
+/*Hero Section */
+/* ********************************* */
+
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+  border-bottom: solid 2.5rem #f2c94c;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+}
+.heading-primary {
+  font-size: 9rem;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Bebas Neue", cursive;
+}
+mark.yellow {
+  color: #f2c94c;
+  background: none;
+}
+
+.heading-greeting {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.hero-description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  background-color: #f2c94c;
+  font-size: 1.4rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 150px;
+  /* always put trasintion to original */
+  transition: background-color 0.3s;
+}
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #dab544;
+}
+
+.hero-img-box {
+  flex: 1;
+  position: relative;
+}
+
+.hero-img-box > * {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero-img-box > :nth-child(1) {
+  left: 12.2rem;
+  top: 5rem;
+}
+.hero-img-box > :nth-child(2) {
+  left: 4rem;
+}
+
+.hero-img-box > :nth-child(3) {
+  left: 13.12rem;
+  top: 7rem;
+}
+
+.hero-img-box > :nth-child(4) {
+  left: 2rem;
+  top: 25rem;
+}
+
+.hero-img-box > :nth-child(5) {
+  left: 47rem;
+  top: -1.5rem;
+  transform: rotate(90deg);
+}
+
+.floating-tag {
+  display: flex;
+  background-color: #f4f3f8;
+  width: 20rem;
+  height: 8.8rem;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2rem 2rem 4rem 0rem rgba(0, 0, 0, 0.3);
+}
+
+.about-floating {
+  box-shadow: 2rem 2rem 4rem 0rem rgba(0, 0, 0, 0.3),
+    -5rem 6rem 10rem 7rem rgba(218, 181, 68, 0.2);
+}
+.my_pro_icon {
+  width: 40%;
+  transform: translateY(30%) scale(2);
+}
+
+.floating-tag-text {
+  font-size: 1.8rem;
+  flex-grow: 1;
+}
+.floating-tag-last {
+  display: flex;
+  background-color: #f4f3f8;
+  width: 20rem;
+  height: 8.8rem;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  box-shadow: 2rem 2rem 4rem 0rem rgba(0, 0, 0, 0.3);
+}
+
+.star_icon {
+  margin-left: 2rem;
+}
+.mark-grey {
+  background: none;
+  color: #909090;
+  font-size: 1.4rem;
+}
+
+.hero-img-box > :nth-child(6) {
+  left: -1rem;
+  top: 10rem;
+}
+
+.hero-img-box > :nth-child(7) {
+  left: 30rem;
+  top: 40rem;
+}
+
+.hero-img-box > :nth-child(8) {
+  left: 50rem;
+  top: 15.5rem;
+}
+
+/* Service Secrtion CSS */
+
+.service-sec {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.secondary-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+.services-offered {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 80%;
+}
+.service {
+  display: inline-block;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service-icon {
+  margin-bottom: 2rem;
+}
+.tertiary-title {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.service-desc {
+  font-size: 1.4rem;
+  color: #909090;
+  line-height: 1.5;
+}
+
+/*****************************************/
+/*Contact Section  */
+/*****************************************/
+
+.section-contact {
+  padding: 0 9.6rem;
+}
