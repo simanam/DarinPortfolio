@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Darin Portfolio</title>
   </head>
   <body>
@@ -12,19 +13,39 @@
       <img src="img/mainlogo.png" alt="logo" class="logo" />
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">Portfolio</a></li>
-          <li><a class="main-nav-link" href="#">About me</a></li>
-          <li><a class="main-nav-link" href="#">Contact</a></li>
+          <li class="main-nav-link">
+            <a data-nav-list="home" href="#">Home</a>
+          </li>
+          <li class="main-nav-link has-sub-menu">
+            <a class="nav-pro" data-nav-list="project" href="#">Portfolio</a>
+            <ul class="sub-menu">
+              <li class="menu-item main-nav-link"><a href="#">UOK</a></li>
+              <li class="menu-item main-nav-link"><a href="#">UNPLUGGED</a></li>
+              <li class="menu-item main-nav-link"><a href="#">AWELOGO</a></li>
+              <li class="menu-item main-nav-link">
+                <a href="#">MAKERSHOST</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav-link">
+            <a data-nav-list="about" href="#">About me</a>
+          </li>
+          <li class="main-nav-link">
+            <a class="nav-contact" data-nav-list="contact" href="#">Contact</a>
+          </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
             <p class="heading-greeting">Hi, there!</p>
-            <h1 class="heading-primary">
+            <h1 class="heading-primary heading-main">
               <mark class="yellow">DARIN </mark>IS HERE TO BE AT YOUR ASSISTANCE
             </h1>
             <p class="hero-description">
@@ -45,7 +66,7 @@
             <img src="svg/dots.svg" alt="My dots Image" class="dots_first" />
             <img src="svg/dots.svg" alt="My dots Image" class="dots_second" />
 
-            <div class="floating-tag">
+            <div class="floating-tag pro-floating">
               <img src="svg/my_pro.svg" alt="My Project" class="my_pro_icon" />
               <p class="floating-tag-text">My Projects</p>
             </div>
@@ -63,54 +84,147 @@
               </p>
             </div>
           </div>
-
-          <div class="service-sec">
-            <h2 class="secondary-title">MY SERVICE</h2>
-            <div class="services-offered">
-              <div class="service">
-                <img
-                  src="svg/Branding.svg"
-                  alt="branding"
-                  class="service-icon"
-                />
-                <h3 class="tertiary-title">Branding</h3>
-                <p class="service-desc">
-                  Work on Logo design and overall product branding.
-                </p>
-              </div>
-              <div class="service">
-                <img
-                  src="svg/ui_design.svg"
-                  alt="branding"
-                  class="service-icon"
-                />
-                <h3 class="tertiary-title">UI/UX</h3>
-                <p class="service-desc">
-                  Create goodlooking and responsive desings by your desire.
-                </p>
-              </div>
-              <div class="service">
-                <img
-                  src="svg/Product.svg"
-                  alt="branding"
-                  class="service-icon"
-                />
-                <h3 class="tertiary-title">Product Design</h3>
-                <p class="service-desc">
-                  Work on the whole product by taking into consideration the
-                  brand and market
-                </p>
-              </div>
+        </div>
+        <dialog class="modal">
+          <div class="modal-sec">
+            <a class="pro pro-1"
+              ><img class="modal-img" src="svg/uok.svg" alt="UOK-logo"
+            /></a>
+            <a class="pro pro-2"
+              ><img
+                class="modal-img"
+                src="img/unpluggedlogo.png"
+                alt="UOK-logo"
+            /></a>
+            <a class="pro pro-3"
+              ><img
+                class="modal-img"
+                src="img/markshotsmall.png"
+                alt="UOK-logo"
+            /></a>
+            <a class="pro pro-4"
+              ><img class="modal-img" src="img/awlogosmall.png" alt="UOK-logo"
+            /></a>
+          </div>
+        </dialog>
+      </section>
+      <section class="service-sec">
+        <div class="service-div">
+          <h2 class="secondary-title">MY SERVICE</h2>
+          <div class="services-offered">
+            <div class="service">
+              <img src="svg/Branding.svg" alt="branding" class="service-icon" />
+              <h3 class="tertiary-title">Branding</h3>
+              <p class="service-desc">
+                Work on Logo design and overall product branding.
+              </p>
+            </div>
+            <div class="service">
+              <img
+                src="svg/ui_design.svg"
+                alt="branding"
+                class="service-icon"
+              />
+              <h3 class="tertiary-title">UI/UX</h3>
+              <p class="service-desc">
+                Create goodlooking and responsive desings by your desire.
+              </p>
+            </div>
+            <div class="service">
+              <img src="svg/Product.svg" alt="branding" class="service-icon" />
+              <h3 class="tertiary-title">Product Design</h3>
+              <p class="service-desc">
+                Work on the whole product by taking into consideration the brand
+                and market
+              </p>
             </div>
           </div>
         </div>
       </section>
       <section class="section-contact">
+        <h2 class="secondary-title contact-title">CONTACT ME</h2>
         <div class="contact">
-          <div class="contact-form">Form</div>
-          <div class="contact-link">link</div>
+          <div class="contact-form">
+            <form class="form" onsubmit="sendEmail(); reset(); return false">
+              <input
+                class="form-input full-name"
+                type="text"
+                id="name"
+                name="fullName"
+                placeholder="Your name"
+                required
+              />
+              <input
+                class="form-input email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Comment"
+                class="comment-box"
+              ></textarea>
+
+              <button class="submit_btn" type="submit">Contact Me</button>
+            </form>
+          </div>
+          <div class="contact-link">
+            <div class="social social-grid">
+              <div class="box box-1">
+                <a
+                  class="social-link"
+                  href="https://www.facebook.com/darin.nikolov.9"
+                  ><img src="svg/facebook.svg" alt="Facebook" />
+                  <p class="social-text">Facebook</p></a
+                >
+              </div>
+              <div class="box box-2">
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/in/darin-nikolov-b294916b/"
+                  ><img src="svg/linkedin.svg" alt="Linkedin" />
+                  <p class="social-text">Linkedin</p></a
+                >
+              </div>
+              <div class="box box-3">
+                <a class="social-link" href="#"
+                  ><img src="svg/slack.svg" alt="slack" />
+                  <p class="social-text">Slack</p></a
+                >
+              </div>
+              <div class="box box-4">
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/darinnikolov/"
+                  ><img src="svg/insta.svg" alt="instagram" />
+                  <p class="social-text">Instagram</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer-sec">
+          <p class="footer-text">Darin Nikolov © 2022. All Rights Reserved.</p>
         </div>
       </section>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="javascript/basic.js"></script>
   </body>
 </html>

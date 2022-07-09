@@ -1,0 +1,514 @@
+/*rem and em do not depend on html font size instead 1rem = 1em = 16px*/
+
+/*1344px smaller desktop*/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 110rem;
+  }
+  .contact {
+    max-width: 110rem;
+  }
+  .header {
+    max-width: 110rem;
+  }
+  .service-div {
+    max-width: 110rem;
+  }
+  .contact-title {
+    max-width: 110rem;
+  }
+  .heading-primary {
+    font-size: 8.6rem;
+  }
+}
+
+/*1200px */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero-img-box > :nth-child(8) {
+    left: 55rem;
+  }
+
+  .hero-img-box > :nth-child(7) {
+    top: 45rem;
+  }
+}
+
+/*1000px */
+
+@media (max-width: 62.5em) {
+  .hero {
+    max-width: 65rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .header {
+    max-width: 65rem;
+  }
+  .heading-greeting {
+    width: 100%;
+    text-align: start;
+  }
+  .heading-primary {
+    font-size: 9.8rem;
+  }
+  .hero-description {
+    text-align: start;
+  }
+  .heading-main {
+    text-align: start;
+  }
+
+  .hero-img-box {
+    height: 50vh;
+    margin-top: 2.5rem;
+  }
+
+  .service-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 65rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secondary-title {
+    display: flex;
+    background-color: #f2c94c;
+    width: 100vh;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-offered {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .service {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact {
+    max-width: 65rem;
+    grid-template-columns: 1fr;
+  }
+  .contact-title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .contact-link {
+    height: 50vh;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    background-color: #f4f3f8;
+    position: absolute;
+    top: 7rem;
+    right: -33rem;
+    width: 30vh;
+    height: fit-content;
+    transform: translateX(30vh);
+    border-radius: 8rem 0 8rem 0;
+    z-index: 10;
+    box-shadow: 1rem 1rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    padding: 4rem;
+
+    /**/
+    opacity: 0;
+
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link > a:link,
+  a:visited {
+    font-weight: 500;
+    font-size: 3rem;
+  }
+
+  /*sub-nav*/
+
+  header .main-nav .main-nav-list .main-nav-link.has-sub-menu > a {
+    padding-left: 0rem;
+  }
+
+  header .main-nav .main-nav-list .main-nav-link.has-sub-menu > a:before {
+    right: 13.5rem;
+    font-size: 3rem;
+    content: "+";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333333;
+    font-weight: 500;
+  }
+
+  header .main-nav .main-nav-list .has-sub-menu > .sub-menu {
+    display: none;
+    position: relative;
+  }
+
+  header .main-nav .main-nav-list .has-sub-menu > .sub-menu .sub-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  header .main-nav .main-nav-list .has-sub-menu:hover > .sub-menu {
+    display: block;
+    position: relative;
+  }
+  .menu-item > a {
+    color: gray;
+  }
+}
+/*nav-open*/
+
+@media (max-width: 44em) {
+  .hero-img-box {
+    height: 35vh;
+  }
+
+  .heading-primary {
+    font-size: 9.6rem;
+  }
+  .yellow_blob {
+    width: 42.2rem;
+    height: 36.4rem;
+  }
+  .blue_blob {
+    width: 28.6rem;
+    height: 30.9rem;
+  }
+  .my_img {
+    width: 26.1rem;
+    height: 22.1rem;
+  }
+  .dots_first {
+    width: 15.9rem;
+    height: 10.9rem;
+  }
+  .dots_second {
+    width: 15.9rem;
+    height: 10.9rem;
+  }
+
+  .hero-img-box > :nth-child(1) {
+    left: 17.2rem;
+    top: 5rem;
+  }
+  .hero-img-box > :nth-child(2) {
+    left: 9rem;
+  }
+
+  .hero-img-box > :nth-child(3) {
+    left: 18.12rem;
+    top: 7rem;
+  }
+
+  .hero-img-box > :nth-child(4) {
+    left: 2rem;
+    top: 25rem;
+  }
+
+  .hero-img-box > :nth-child(5) {
+    left: 40rem;
+    top: -1.5rem;
+    transform: rotate(90deg);
+  }
+
+  .hero-img-box > :nth-child(6) {
+    left: -1rem;
+    top: 10rem;
+  }
+
+  .hero-img-box > :nth-child(7) {
+    left: 32rem;
+    top: 30rem;
+  }
+
+  .hero-img-box > :nth-child(8) {
+    left: 45rem;
+    top: 15.5rem;
+  }
+
+  .hero-btn:link,
+  .hero-btn:visited {
+    font-size: 1.6rem;
+    padding: 2rem 3rem;
+    border-radius: 150px;
+    /* always put trasintion to original */
+    transition: background-color 0.3s;
+  }
+
+  .secondary-title {
+    height: 7.5rem;
+  }
+  .tertiary-title {
+    font-size: 3rem;
+  }
+
+  .service-desc {
+    font-size: 2rem;
+  }
+
+  .social-text {
+    font-size: 3rem;
+  }
+
+  .section-contact {
+    padding: 4.8rem 0 2.6rem 0;
+  }
+
+  .contact-title {
+    height: 7.5rem;
+  }
+  .contact-link {
+    height: auto;
+    padding: 3.4rem;
+  }
+
+  .contact-form {
+    display: none;
+  }
+  .contact-title {
+    margin-bottom: 1.5rem;
+  }
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+  .box {
+    height: 30.5rem;
+  }
+
+  .box:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .footer-sec {
+    height: 6rem;
+    font-size: 1.8rem;
+  }
+  .modal {
+    display: none;
+  }
+}
+/****************/
+/*small 550px*/
+/****************/
+
+@media (max-width: 34em) {
+  .heading-primary {
+    font-size: 6.4rem;
+  }
+  .yellow_blob {
+    width: 25.5rem;
+    height: 22.8rem;
+  }
+  .blue_blob {
+    width: 19.37rem;
+    height: 20.41rem;
+  }
+  .my_img {
+    width: 18.52rem;
+    height: 16.45rem;
+  }
+  .dots_first {
+    width: 7.9rem;
+    height: 4.9rem;
+  }
+  .dots_second {
+    width: 7.9rem;
+    height: 4.9rem;
+  }
+
+  .hero-img-box > :nth-child(1) {
+    left: 12.2rem;
+    top: 2rem;
+  }
+  .hero-img-box > :nth-child(2) {
+    left: 9rem;
+  }
+
+  .hero-img-box > :nth-child(3) {
+    left: 13.12rem;
+    top: 3rem;
+  }
+
+  .hero-img-box > :nth-child(4) {
+    left: 6rem;
+    top: 15rem;
+  }
+
+  .hero-img-box > :nth-child(5) {
+    left: 30rem;
+    top: 2.5rem;
+  }
+
+  .hero-img-box > :nth-child(6) {
+    left: 2rem;
+    top: 3rem;
+  }
+
+  .hero-img-box > :nth-child(7) {
+    left: 20rem;
+    top: 20rem;
+  }
+
+  .hero-img-box > :nth-child(8) {
+    left: 33rem;
+    top: 7.9rem;
+  }
+
+  .floating-tag {
+    width: 15rem;
+    height: 4.8rem;
+    border-radius: 10px;
+  }
+
+  .floating-tag-last {
+    width: 15rem;
+    height: 4.8rem;
+    border-radius: 10px;
+  }
+  .floating-tag-text {
+    font-size: 1.4rem;
+  }
+  .my_pro_icon {
+    width: 30%;
+  }
+
+  .hero-img-box {
+    height: 15vh;
+    margin-top: 2.5rem;
+  }
+  .heading-greeting {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .hero-description {
+    display: none;
+  }
+
+  .section-hero {
+    padding: 4.8rem 2rem 9.6rem 2rem;
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .heading-primary {
+    font-size: 5.8rem;
+  }
+
+  .hero-img-box > :nth-child(1) {
+    left: 10.2rem;
+    top: 2rem;
+  }
+  .hero-img-box > :nth-child(2) {
+    left: 7rem;
+  }
+
+  .hero-img-box > :nth-child(3) {
+    left: 11.12rem;
+    top: 3rem;
+  }
+
+  .hero-img-box > :nth-child(4) {
+    left: 4rem;
+    top: 15rem;
+  }
+
+  .hero-img-box > :nth-child(5) {
+    left: 28rem;
+    top: 2.5rem;
+  }
+
+  .hero-img-box > :nth-child(6) {
+    left: 0rem;
+    top: 3rem;
+  }
+
+  .hero-img-box > :nth-child(7) {
+    left: 18rem;
+    top: 20rem;
+  }
+
+  .hero-img-box > :nth-child(8) {
+    left: 31rem;
+    top: 7.9rem;
+  }
+
+  .floating-tag {
+    width: 15rem;
+    height: 4.8rem;
+    border-radius: 10px;
+  }
+
+  .floating-tag-last {
+    width: 15rem;
+    height: 4.8rem;
+    border-radius: 10px;
+  }
+  .floating-tag-text {
+    font-size: 1.4rem;
+  }
+  .my_pro_icon {
+    width: 30%;
+  }
+
+  .hero-img-box {
+    height: 15vh;
+    margin-top: 2.5rem;
+  }
+  .heading-greeting {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .hero-description {
+    display: none;
+  }
+
+  .section-hero {
+    padding: 4.8rem 2rem 9.6rem 2rem;
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+}
