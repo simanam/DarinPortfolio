@@ -21,6 +21,9 @@
   .heading-primary {
     font-size: 8.6rem;
   }
+  .pro-head-sec {
+    max-width: 110rem;
+  }
 }
 
 /*1200px */
