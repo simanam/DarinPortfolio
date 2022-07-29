@@ -25,6 +25,9 @@
   line-height: 1;
   font-weight: 300;
 }
+.maker-titl {
+  font-size: 11rem;
+}
 mark.blue {
   background: none;
   color: #0080dc;
