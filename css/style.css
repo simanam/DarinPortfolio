@@ -331,6 +331,7 @@ mark.yellow {
 
 .service-sec {
   padding: 4.8rem 0 9.6rem 0;
+  border-bottom: 0.8rem solid #f2c94c;
 }
 
 .service-div {
@@ -369,6 +370,27 @@ mark.yellow {
   font-size: 1.4rem;
   color: #909090;
   line-height: 1.5;
+}
+
+/*****************************************/
+/*About Section  */
+/*****************************************/
+
+.about-sec {
+  padding: 4.8rem 0 9.6rem 0;
+  border-bottom: 0.8rem solid #f2c94c;
+}
+
+.about-text-sec {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+.about-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 /*****************************************/

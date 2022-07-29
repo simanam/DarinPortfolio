@@ -37,6 +37,11 @@ mark.maroon {
   background: none;
   color: #9b3232;
 }
+mark.sea-green {
+  background: none;
+  color: #3bbcc3;
+}
+
 .uok-img {
   width: 37.2rem;
   height: 37.2rem;
@@ -50,6 +55,10 @@ mark.maroon {
 }
 .maroon {
   background-color: #9b3232;
+}
+
+.sea-green {
+  background-color: #3bbcc3;
 }
 .summary {
   display: grid;
@@ -93,7 +102,11 @@ mark.maroon {
   border-bottom: 0.8rem solid #007d7e;
 }
 .section-tool-maroon {
-  border: #9b3232;
+  border-bottom: 0.8rem solid #9b3232;
+}
+
+.section-tool-sea-green {
+  border-bottom: 0.8rem solid #3bbcc3;
 }
 .tool-box-sec {
   max-width: 130rem;
@@ -127,7 +140,9 @@ hr {
 hr.bottom {
   width: 15%;
 }
-
+.top-sea-green {
+  border-top: 4px solid #3bbcc3;
+}
 .top-green {
   border-top: 4px solid #007d7e;
 }
@@ -153,6 +168,18 @@ hr.bottom {
   grid-template-columns: 1fr 2fr;
   gap: 4rem;
 }
+.detail-box-awe {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rem;
+}
+.detail-box-mkr {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
 
 .details-sec {
   display: grid;
@@ -173,7 +200,10 @@ hr.bottom {
   font-weight: 300;
   padding-top: 3rem;
 }
-
+.maker-img-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .video-sec {
   display: grid;
   margin: 0;

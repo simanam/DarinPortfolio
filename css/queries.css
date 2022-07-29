@@ -24,6 +24,10 @@
   .pro-head-sec {
     max-width: 110rem;
   }
+
+  .about-text-sec {
+    max-width: 110rem;
+  }
 }
 
 /*1200px */
@@ -78,6 +82,13 @@
     max-width: 65rem;
     justify-content: center;
     align-items: center;
+  }
+  .about-text-sec {
+    max-width: 65rem;
+  }
+
+  .about-text {
+    text-align: center;
   }
 
   .secondary-title {
@@ -158,6 +169,13 @@
   a:visited {
     font-weight: 500;
     font-size: 3rem;
+  }
+  .about-sec {
+    border-bottom: none;
+  }
+
+  .service-sec {
+    border-bottom: none;
   }
 
   /*sub-nav*/
@@ -294,6 +312,12 @@
 
   .section-contact {
     padding: 4.8rem 0 2.6rem 0;
+  }
+  .about-sec {
+    padding: 4.8rem 0 0 0;
+  }
+  .about-text-sec {
+    padding: 2rem 4rem;
   }
 
   .contact-title {
